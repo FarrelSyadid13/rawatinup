@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KicksWash Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Navigasi utama">
+        <a class="brand" href="#home" aria-label="KicksWash Market">
+          <span class="brand-mark">KW</span>
+          <span>Rawat Inup</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#layanan">Layanan</a>
+          <a href="#order">Pesan</a>
+          <a href="#alur">Alur</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Marketplace laundry sepatu on-demand</p>
+          <h1>KicksWash Market</h1>
+          <p class="hero-copy">
+            Pilih treatment, jadwalkan penjemputan, lalu pantau pesanan sepatu dari satu dashboard.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#layanan">Pilih Layanan</a>
+            <a class="button ghost" href="#order">Pesan Sekarang</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Ringkasan marketplace">
+          <div>
+            <strong>6</strong>
+            <span>Paket layanan</span>
+          </div>
+          <div>
+            <strong>24 jam</strong>
+            <span>Express clean</span>
+          </div>
+          <div>
+            <strong>SQLite</strong>
+            <span>Database pesanan</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="layanan">
+        <div class="section-heading">
+          <p class="eyebrow">Pilih treatment</p>
+          <h2>Marketplace Layanan</h2>
+          <p>Setiap paket bisa langsung dipilih dan otomatis masuk ke formulir pesanan.</p>
+        </div>
+
+        <div class="toolbar" aria-label="Filter layanan">
+          <button class="chip active" data-filter="all" type="button">Semua</button>
+          <button class="chip" data-filter="cleaning" type="button">Cleaning</button>
+          <button class="chip" data-filter="restoration" type="button">Restorasi</button>
+          <button class="chip" data-filter="bundle" type="button">Bundle</button>
+        </div>
+
+        <div class="service-grid" id="serviceGrid">
+          <article class="service-card" data-category="cleaning" data-service="Express Clean">
+            <img src="/assets/express-clean.png" alt="Sepatu bersih setelah express clean" />
+            <div class="service-body">
+              <span class="tag">24 jam</span>
+              <h3>Express Clean</h3>
+              <p>Cuci ringan untuk sepatu harian, bagian upper, midsole, dan outsole.</p>
+              <div class="card-footer">
+                <strong>Rp35.000</strong>
+                <button class="button small choose-service" type="button">Pilih</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="cleaning" data-service="Deep Clean">
+            <img src="/assets/deep-clean.png" alt="Sepatu sneaker dicuci secara menyeluruh" />
+            <div class="service-body">
+              <span class="tag">Best seller</span>
+              <h3>Deep Clean</h3>
+              <p>Pembersihan menyeluruh sampai detail lace, insole, outsole, dan deodorizing.</p>
+              <div class="card-footer">
+                <strong>Rp65.000</strong>
+                <button class="button small choose-service" type="button">Pilih</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="restoration" data-service="Unyellowing">
+            <img src="/assets/unyellowing.png" alt="Sole sepatu putih setelah unyellowing" />
+            <div class="service-body">
+              <span class="tag">Whitening</span>
+              <h3>Unyellowing</h3>
+              <p>Treatment untuk mengurangi noda kuning pada midsole dan outsole putih.</p>
+              <div class="card-footer">
+                <strong>Rp85.000</strong>
+                <button class="button small choose-service" type="button">Pilih</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="cleaning" data-service="Leather Care">
+            <img src="/assets/leather-care.png" alt="Perawatan sepatu kulit premium" />
+            <div class="service-body">
+              <span class="tag">Premium</span>
+              <h3>Leather Care</h3>
+              <p>Cleaning, conditioning, dan finishing khusus untuk sepatu kulit.</p>
+              <div class="card-footer">
+                <strong>Rp75.000</strong>
+                <button class="button small choose-service" type="button">Pilih</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="restoration" data-service="Premium Repaint">
+            <img src="/assets/repaint.png" alt="Sepatu custom setelah repaint" />
+            <div class="service-body">
+              <span class="tag">Restorasi</span>
+              <h3>Premium Repaint</h3>
+              <p>Pengecatan ulang area pudar atau lecet dengan finishing tahan pakai.</p>
+              <div class="card-footer">
+                <strong>Rp150.000</strong>
+                <button class="button small choose-service" type="button">Pilih</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="bundle" data-service="Family Bundle">
+            <img src="/assets/family-bundle.png" alt="Beberapa pasang sepatu siap dicuci" />
+            <div class="service-body">
+              <span class="tag">Hemat</span>
+              <h3>Family Bundle</h3>
+              <p>Paket cuci untuk beberapa pasang sepatu keluarga atau komunitas.</p>
+              <div class="card-footer">
+                <strong>Rp120.000</strong>
+                <button class="button small choose-service" type="button">Pilih</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section order-layout" id="order">
+        <div class="order-copy">
+          <p class="eyebrow">Pesanan baru</p>
+          <h2>Form Order Laundry Sepatu</h2>
+          <p>
+            Data dari formulir ini masuk ke database SQLite dan muncul otomatis di tabel pesanan masuk.
+          </p>
+          <div class="steps" id="alur">
+            <div>
+              <span>1</span>
+              <p>Pelanggan memilih layanan dan jadwal jemput.</p>
+            </div>
+            <div>
+              <span>2</span>
+              <p>Tim menerima pesanan di dashboard.</p>
+            </div>
+            <div>
+              <span>3</span>
+              <p>Status dicatat dari baru sampai selesai.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <!-- 1. Data diri -->
+          <div class="form-row">
+            <label>
+              Nama pelanggan
+              <input name="customerName" type="text" placeholder="Contoh: Andi Pratama" required />
+            </label>
+            <label>
+              Nomor WhatsApp
+              <input name="phone" type="tel" placeholder="08xxxxxxxxxx" required />
+            </label>
+          </div>
+
+          <!-- 2. Layanan & jenis sepatu -->
+          <div class="form-row">
+            <label>
+              Layanan
+              <select name="service" id="serviceSelect" required>
+                <option value="">Pilih layanan</option>
+                <option>Express Clean</option>
+                <option>Deep Clean</option>
+                <option>Unyellowing</option>
+                <option>Leather Care</option>
+                <option>Premium Repaint</option>
+                <option>Family Bundle</option>
+              </select>
+            </label>
+            <label>
+              Jenis sepatu
+              <select name="shoeType" required>
+                <option value="">Pilih jenis</option>
+                <option>Sneakers</option>
+                <option>Canvas</option>
+                <option>Running</option>
+                <option>Leather</option>
+                <option>Suede</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- 3. Jumlah pasang -->
+          <label>
+            Jumlah pasang
+            <input name="pairs" type="number" min="1" value="1" required style="max-width:160px" />
+          </label>
+
+          <!-- 4. Metode Pengambilan -->
+          <div class="pickup-section">
+            <span class="pickup-label">Metode Pengambilan</span>
+            <div class="pickup-toggle">
+              <button type="button" class="pickup-btn pickup-btn--pickup active" id="btnPickup" onclick="setPengambilan('pickup')">
+                <span class="pickup-btn__icon">🛵</span>
+                <span class="pickup-btn__title">Pickup</span>
+                <span class="pickup-btn__sub">Kami jemput ke lokasi Anda</span>
+              </button>
+              <button type="button" class="pickup-btn pickup-btn--drop" id="btnDrop" onclick="setPengambilan('drop')">
+                <span class="pickup-btn__icon">📍</span>
+                <span class="pickup-btn__title">Drop</span>
+                <span class="pickup-btn__sub">Antar sendiri ke toko</span>
+              </button>
+            </div>
+            <input type="hidden" name="pengambilan" id="pengambilanInput" value="pickup" />
+          </div>
+
+          <!-- 5a. Alamat penjemputan — muncul saat Pickup -->
+          <div id="pickupAddress">
+            <label>
+              Alamat penjemputan
+              <textarea name="address" rows="3" placeholder="Tulis alamat lengkap tempat penjemputan" required></textarea>
+            </label>
+          </div>
+
+          <!-- 5b. Info Drop + Maps — muncul saat Drop -->
+          <div id="dropInfo" class="drop-info" hidden>
+            <div class="drop-info__header">
+              <span class="drop-info__badge">Drop Point</span>
+              <strong>Alamat Toko KicksWash</strong>
+            </div>
+            <div class="drop-info__address">
+              <span class="drop-info__pin">📍</span>
+              <div>
+                <strong>KicksWash Market</strong>
+                <p>Jl. Moch. Toha No. 47, Kel. Cibadak<br/>Kec. Astana Anyar, Soreang, Kab. Bandung<br/>Jawa Barat 40914</p>
+                <a class="drop-info__gmaps-link" href="https://maps.google.com/?q=KicksWash+Soreang+Bandung" target="_blank" rel="noopener">🗺 Buka di Google Maps ↗</a>
+              </div>
+            </div>
+            <div class="drop-info__maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.82!2d107.5215!3d-6.9719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e3a9b2b7f5ab%3A0x0!2sJl.+Moch.+Toha%2C+Soreang!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <p class="drop-info__hours">🕐 <strong>Jam Buka:</strong> Senin–Sabtu 07.00–20.00 &nbsp;|&nbsp; Minggu 08.00–17.00</p>
+          </div>
+
+          <!-- 6. Tanggal & catatan -->
+          <label id="pickupDateLabel">
+            <span id="pickupDateText">Tanggal Jemput</span>
+            <input name="pickupDate" type="date" required />
+          </label>
+          <label>
+            Catatan
+            <textarea name="notes" rows="3" placeholder="Contoh: noda lumpur di sole kiri"></textarea>
+          </label>
+          <div class="estimate">
+            <span>Estimasi total</span>
+            <strong id="totalEstimate">Rp0</strong>
+          </div>
+          <button class="button wa-submit full" type="button" id="btnWhatsapp" onclick="kirimWA()">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Kirim Pesanan via WhatsApp
+          </button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <span>KicksWash Market</span>
+      <span>Website marketplace laundry sepatu dengan database pesanan.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
